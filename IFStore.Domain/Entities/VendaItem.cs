@@ -16,5 +16,18 @@ namespace IFStore.Domain.Entities
 
         public Produto Produto { get; set; }
 
+        public VendaItem(int qtd, double vu, double vt, Venda vd, Produto pd) { 
+            Quantidade= qtd;
+            ValorUnitario= vu;
+            ValorTotal= vt;
+            Venda= vd;
+            Produto= pd;
+        }  
+
+        public VendaItem()
+        {
+
+        }
+
     }
 }

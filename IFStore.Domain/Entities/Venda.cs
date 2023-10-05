@@ -14,5 +14,8 @@ namespace IFStore.Domain.Entities
         public Usuario Usuario { get; set; }
 
         public Cliente Cliente { get; set; }
+
+        public Venda() { 
+        }
     }
 }

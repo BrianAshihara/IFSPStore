@@ -108,15 +108,23 @@ namespace IFSPStore.Teste
         {
             using (var context = new MyDbContext())
             {
-                var usuario = context.Usuario.First(b => b.Id == 3);
-                var cliente = context.Cliente.First(d => d.Id == 7);
+                var usuario = context.Usuario.First(b => b.Id == 1);
+                var cliente = context.Cliente.First(d => d.Id == 1);
+                var produto = context.Produto.First(p => p.Id == 1);
+
                 var venda = new Venda
                 {
                     Data = DateTime.Now,
                     ValorTotal = 900,
                     Usuario = usuario,
                     Cliente = cliente
+                    
                 };
+
+                List<VendaItem> items = new List<VendaItem>();
+                var vendaitem = new VendaItem(10, 10, 10,venda, produto);
+                items.Add(vendaitem);
+                context.VendaItem.Add(vendaitem);
                 context.Venda.Add(venda);
                 context.SaveChanges();
             }
