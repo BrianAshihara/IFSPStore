@@ -10,5 +10,9 @@ namespace IFStore.Domain.Entities
     {
         public string Nome { get; set; }
 
+        public static implicit operator Grupo(Produto v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

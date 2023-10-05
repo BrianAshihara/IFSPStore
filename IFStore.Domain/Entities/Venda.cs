@@ -11,8 +11,8 @@ namespace IFStore.Domain.Entities
         public DateTime Data { get; set; }
         public double ValorTotal { get; set; }
 
-        public Usuario idUsuario { get; set; }
+        public Usuario Usuario { get; set; }
 
-        public Cliente idCliente { get; set; }
+        public Cliente Cliente { get; set; }
     }
 }

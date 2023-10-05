@@ -15,7 +15,13 @@ namespace IFStore.Domain.Entities
         public DateTime DataCompra { get; set; }
         public string UnidadeVenda { get; set; }
 
-        public Grupo idGrupo { get; set; }
+        public Grupo Grupo { get; set; }
 
+        public Produto()
+        {
+
+        }
     }
+
+   
 }

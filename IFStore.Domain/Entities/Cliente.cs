@@ -13,7 +13,7 @@ namespace IFStore.Domain.Entities
         public string Endereco { get; set; }
         public string Documentento { get; set; }
         public string Bairro { get; set; }
-        public Cidade idCidade { get; set; }
+        public Cidade Cidade { get; set; }
 
     }
 }

@@ -12,9 +12,9 @@ namespace IFStore.Domain.Entities
         public double ValorUnitario { get; set; }
         public double ValorTotal { get; set; }
 
-        public Venda idVenda { get; set; }
+        public Venda Venda { get; set; }
 
-        public Produto idProduto { get; set; }
+        public Produto Produto { get; set; }
 
     }
 }
